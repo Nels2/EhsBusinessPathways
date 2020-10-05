@@ -1,0 +1,222 @@
+/*controls the main page header*/
+h1 {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+/*controls the pathway titles*/
+p  {
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  padding-left: 80px;
+  padding-right: auto;
+}
+/*for the three images*/
+.padding {
+  left: 60px;
+  width: 270px;
+  height: 170px;
+  border: 1px solid #CFCFCF;
+  position: relative;
+  float: center;
+
+}
+/*if padding2/3 is any taller(height) the image is stretched.*/
+.padding2 {
+  left: 50px;
+  width: 290px;
+  height: 170px;
+  border: 1px solid #CFCFCF;
+  position: relative;
+  float: center;
+
+}
+.padding3 {
+  left: 60px;
+  width: 280px;
+  height: 170px;
+  border: 1px solid #CFCFCF;
+  position: relative;
+  float: center;
+
+}
+/*keeping it simple*/
+.Headpic {
+  padding-top: 30px;
+  position: relative;
+  
+  text-align: center;
+}
+/*inner definitions, can't find 'current' definition of any of the three, only specific class.*/
+.innerdef {
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+.floats {
+  content: "";
+  clear: both;
+  display: table;
+}
+.miniHeader { 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  background-color: red;
+  background-image: url("/images/ehs_banner1.png");
+  padding-top: 5px;
+}
+.name {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: black;
+  background-color: rgb(248, 248, 248);
+  min-width: 100%;
+}
+hr {
+  color: rgb(128, 128, 128);
+}
+html, body {
+  background-color: white;
+}
+/*controls the dashed information*/
+.innertype {
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 80px;
+  padding-right: auto;
+  position: aboslute;
+}
+/*dropdowns here */
+.dropbtn {
+  position: relative;
+  background-color: whitesmoke;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 95px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  left: 150px;
+  padding-top: 15px;
+  text-align: center;
+}
+/*controls background of the hover drop down menu*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/*here's some text alignment.*/
+.dropdown-content p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: rgb(196, 196, 196);}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: darkred;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: darkcyan;
+}
+/*drop down ends here*/
+#catalog {
+  position: relative;
+  float: center;
+  padding-bottom: 15px;
+  margin-left: 30%;
+}
+/*top nav bar starts here, these control how it looks and where it is.*/
+.tobbar {
+  padding: 10px 16px;
+  background-color: red;
+  background-image: url("/images/ehs_banner.jpg");
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  z-index: 2;
+  min-width: 100%;
+  margin-left: -5px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  min-width: 100%
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+/*top bar ends here.*/ 
+/*bottom tab bar starts here, sticky and goes where user goes.*/
+#bottombar {
+  clear: both;
+  min-width: 100%;
+  height: 25px;
+  background-color: whitesmoke;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  padding-bottom: 5px;
+  padding-top: 0px;
+}
+/*for "contact :"*/
+#madeby {
+  color: black;
+  font-size: 12px;
+}
+/*for email*/
+#itali {
+  color: darkorange;
+  font-style:italic;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+}
+#help1 {
+  font-size: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: underline;
+  text-align: center;
+  left: 20px;
+}
+.help {
+  font-size: 12px;
+  font-style: italic;
+}
